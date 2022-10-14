@@ -13,17 +13,21 @@ public class ExceptionHandling {
 		System.out.println("End of program");
 	}
 
-	public static int div(int a, int b) {
-		int div=-1;
+	public static int div(int a, int b) throws ArithmeticException{
+		int div = -1;
 		try {
 			div = a / b;
+			throw new RuntimeException("Explicitly thrown exception");
 //			return div;
 		} catch (ArithmeticException ae) {
 			System.out.println(ae);
 //			return -1;
+		} catch (Exception e) {
+			System.out.println("Inside Exception catch block");
+			System.out.println(e);
 		} finally {
 			return div;
 		}
-
 	}
+
 }
