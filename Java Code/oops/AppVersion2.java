@@ -1,8 +1,9 @@
 package oops;
 
-public class AppVersion2 extends AppVersion1 {
+public abstract class AppVersion2 extends AppVersion1 {
 	
 	//polymorphism - overriding
+	@Override
 	public void function2()
 	{
 		System.out.println("Modified: Doing function 2");
@@ -18,4 +19,6 @@ public class AppVersion2 extends AppVersion1 {
 	{
 		System.out.println("Doing "+functionality);
 	}
+	
+	public abstract void function4();
 }

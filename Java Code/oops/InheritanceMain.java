@@ -2,10 +2,11 @@ package oops;
 
 public class InheritanceMain {
 	public static void main(String[] args) {
-		AppVersion2 appv2= new AppVersion2();
-		appv2.function1();
-		appv2.function2();
-		appv2.function3();
-		appv2.function3("Camera functionality");
+		AppVersion3 appv3= new AppVersion3();
+		appv3.function1();
+		appv3.function2();
+		appv3.function3();
+		appv3.function3("Camera functionality");
+		appv3.function4();
 	}
 }
